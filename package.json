@@ -1,0 +1,25 @@
+{
+  "name": "chat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3",
+    "kill-port": "^1.1.0",
+    "mongodb": "^3.0.6",
+    "mongoose": "^5.0.14",
+    "monk": "^4.0.0",
+    "node-uuid": "^1.4.8",
+    "socket.io": "^1.7.3",
+    "underscore": "^1.8.3"
+    
+  }
+}
+
+       

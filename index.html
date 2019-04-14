@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Sohbet Uygulaması</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="main col-md-6 col-md-offset-3">
+    <div class="alert alert-danger" id="errors"></div>
+    <div id="login-screen">
+      <p class="lead">Sohbet Uygulaması</p>
+      <p>Lütfen sohbete katılmak için kullanıcı seçiniz.</p>
+      <form class="form-inline" id="nameForm">
+        <select>
+          <option value="1">Quaresma</option>
+          <option value="2">Talisca</option>
+          <option value="3">Babel</option>
+          <option value="4">Negredo</option>
+          <option value="5">Pepe</option>
+        </select>
+        <input type="submit" name="join" id="join" value="Katıl" class="btn btn-primary btn-lg">
+      </form>
+    </div>
+  </div>
+
+  <div class="row" id="main-chat-screen">
+    <div class="col-md-3">
+      <ul id="rooms" class="list-group"></ul>
+      <ul id="people" class="list-group"></ul>
+    </div>
+    <div class="col-md-6">
+      <ul id="sohbetler">
+        <li>GENEL</li>
+
+      </ul>
+
+      <div class="conversation" id="genel">
+        <ul id="msgs" class="list-unstyled"></ul>
+      </div>
+      <div class="conversation" id="Oda1">
+        <ul id="msgs" class="list-unstyled"></ul>
+      </div>
+      <div class="conversation" id="Oda2">
+        <ul id="msgs" class="list-unstyled"></ul>
+      </div>
+      <div class="conversation" id="Oda3">
+        <ul id="msgs" class="list-unstyled"></ul>
+      </div>
+      <div class="conversation" id="Quaresma">
+        <ul id="msgs" class="list-unstyled"></ul>
+      </div>
+      <div class="conversation" id="Talisca">
+        <ul id="msgs" class="list-unstyled"></ul>
+      </div>
+      <div class="conversation" id="Babel">
+        <ul id="msgs" class="list-unstyled"></ul>
+      </div>
+      <div class="conversation" id="Negredo">
+        <ul id="msgs" class="list-unstyled"></ul>
+      </div>
+      <div class="conversation" id="Pepe">
+        <ul id="msgs" class="list-unstyled"></ul>
+      </div>
+
+
+      <form id="chatForm" class="form-inline">
+        <div class="form-group">
+          <input type="text" class="form-control input-lg" placeholder="Mesaj Gönder" id="msg">
+        </div>
+        <input type="submit" name="send" id="send" value="Gönder" class="btn btn-success btn-lg">
+
+      </form>
+    </div>
+    <div class="col-md-2">
+      <ul class="list-unstyled" id="updates"></ul>
+    </div>
+  </div>
+  </div>
+
+  <!-- Modal start -->
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="scripts/master.js"></script>
+
+</html>
